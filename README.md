@@ -5,7 +5,7 @@
   - [Contributing](#contributing)
 
 ## mc_serv
-mc_serv.sh | MInecraft automatic server creator written in 100% Bash
+mc_serv.sh | MInecraft automated server creator written in 100% Bash
 
 ## Usage
 
