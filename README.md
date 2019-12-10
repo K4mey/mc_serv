@@ -1,3 +1,5 @@
+  <a href="https://github.com/KamenkoTV/mc_serv/"><img src="https://i.imgur.com/B0zPm3E.png" alt="discord.sh"></a>
+
 ## mc_serv
 mc_serv.sh | MInecraft automatic server creator written in 100% Bash
 
