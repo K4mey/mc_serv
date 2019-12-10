@@ -13,7 +13,7 @@ mc_serv.sh | MInecraft automated server creator written in 100% Bash
 2. cd to direcotry where you saved at.
 3. rn `mc_serv.sh` in terminal `sudo sh mc_serv.sh` 
 
-## Clone it with wget
+## Clone it using wget
 1. install wget if you don't have it already installed.
 3. open terminal 
 4. cd to direcotry where you want to save 
