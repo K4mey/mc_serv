@@ -68,22 +68,22 @@ echo ${green}
             mkdir Server
             cd Server
 
-            curl https://papermc.io/api/v1/paper/1.14.4/latest/download --output paper.jar
+            sudo curl https://papermc.io/api/v1/paper/1.14.4/latest/download --output paper.jar
 
-            echo 'eula=true' >eula.txt
+            sudo echo 'eula=true' >eula.txt
 
             # you can change this command however you want.
 
-            echo 'java -Xms1024M -Xmx2048M -jar paper.jar nogui' >run.sh
+            sudo echo 'java -Xms1024M -Xmx2048M -jar paper.jar nogui' >run.sh
 
-            sh ./run.sh
+            sudo sh ./run.sh
 
             ;;
 
 
         3)
 
-            curl https://raw.githubusercontent.com/KamenkoTV/mc_serv/master/java.sh --output java.sh
+            sudo curl https://raw.githubusercontent.com/KamenkoTV/mc_serv/master/java.sh --output java.sh
             sh java.sh
 
             ;;
