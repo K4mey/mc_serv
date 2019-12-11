@@ -1,26 +1,37 @@
 #!/bin/bash
 
+
 while :
 do
-    echo "Choose your operating system!"
 
-    echo "1 - Linux - debian/ubuntu based only."
-    echo "2 - Mac"
+green=`tput setaf 2`
+echo ${green}
+
+
+    echo ----------------------------------------------------
+    echo    ******************Choose your operating system!*************
+    echo ----------------------------------------------------
+    echo Select a Choice
+    echo [1] Linux - debian/ubuntu based only.
+    echo [2] Mac
+    echo [3] Java Installer "(select java version you want to install mac/linux)".
+    echo [4] Exit
+    echo ----------------------------------------------------
 
     read answer;
 
     case $answer in
         1)
-            echo "you have chosen linux."
             clear
+            echo ----------------------------------------------------
             echo "          please run me as sudo if you didn't alerdy."
             echo "    Thank you for using Kamenko's server creator script!."
             echo "            I hope you have java installed!."
-            echo "0-----------------------------------------------------------0"
-            echo "."
-            echo "."
-            echo "."
-            echo "."
+            echo ----------------------------------------------------
+            echo
+            echo
+            echo
+            echo
             echo "    After running this script you'll have another script in folder called run.sh whic you will use to start server."
 
             sudo apt-get install curl
@@ -38,11 +49,11 @@ do
             sh ./run.sh
 
 
-        ;;
+            ;;
 
         2)
-            echo "Create file [test1.sh] in [\tmp]"
-                        echo "you have chosen linux."
+
+            echo "you have chosen Mac."
             clear
             echo "          please run me as sudo if you didn't alerdy."
             echo "    Thank you for using Kamenko's server creator script!."
@@ -67,7 +78,23 @@ do
 
             sh ./run.sh
 
-        ;;
+            ;;
+
+
+        3)
+
+            curl https://raw.githubusercontent.com/KamenkoTV/mc_serv/master/java.sh --output java.sh
+            sh java.sh
+
+            ;;
+
+
+        4)
+
+            exit
+
+
+            ;;
 
 
     esac
